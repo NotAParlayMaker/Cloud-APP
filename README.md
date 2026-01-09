@@ -1,21 +1,55 @@
-# OpenSportsAnalytics
+# SportsInsight AI
 
-> A community-driven, open-source platform for collecting, storing, and analyzing sports data in real-time with AI-powered insights.
+> Premium AI-powered sports analytics platform with freemium SaaS model. Built on open-source foundations, now offering advanced AI predictions, real-time updates, and professional integrations.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-20+-green.svg)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue.svg)](https://www.typescriptlang.org/)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/opensportsanalytics/sportsinsight-ai/releases)
 
 ## Overview
 
-OpenSportsAnalytics is a comprehensive cloud-based platform designed to democratize sports analytics. Whether you're a fan, coach, analyst, or researcher, this platform provides the tools you need to collect, analyze, and gain insights from sports data.
+**SportsInsight AI** (formerly OpenSportsAnalytics) is a comprehensive cloud-based SaaS platform that democratizes sports analytics through AI-powered insights. Whether you're a fantasy sports enthusiast, professional coach, betting analyst, or data researcher, our platform provides enterprise-grade tools accessible to everyone.
 
-### Key Features
+## 🎯 Subscription Tiers
 
+### Free Tier - **$0/month**
+Perfect for getting started with sports analytics
+- Basic data ingestion from public APIs
+- Upload up to 5 datasets
+- Simple dashboards and visualizations
+- Community dataset access
+- **10 API requests per day**
+
+### Premium Tier - **$19/month**
+For serious fans and fantasy players
+- ✅ Everything in Free
+- 🤖 AI-powered game predictions
+- 📊 Player performance forecasting
+- ⚕️ Injury risk analysis
+- 💬 AI chat assistant (100 queries/month)
+- ⚡ Real-time game updates
+- **1,000 API requests per day**
+
+### Pro Tier - **$99/month**
+For professionals and developers
+- ✅ Everything in Premium
+- 💬 Unlimited AI chat queries
+- 🏈 Fantasy league integrations (DraftKings, FanDuel)
+- 🎲 Betting analytics & odds
+- 🔌 Full API access for third-party apps
+- 👥 Team collaboration (up to 10 users)
+- **Unlimited API requests**
+
+[View Full Pricing Details →](./BUSINESS.md)
+
+## Key Features
+
+### Core Features (All Tiers)
 - **📊 Multi-Source Data Ingestion**
   - Upload CSV/JSON files
-  - Integrate with public sports APIs (NBA, NFL, Soccer leagues)
+  - Integrate with public sports APIs (NBA, NFL, Soccer, Cricket, Esports)
   - Real-time data processing and validation
 
 - **📈 Interactive Analytics Dashboard**
@@ -25,23 +59,56 @@ OpenSportsAnalytics is a comprehensive cloud-based platform designed to democrat
   - Historical comparisons
   - Real-time visualizations using Chart.js
 
+### Premium Features
+
 - **🤖 AI-Powered Predictions**
   - Game outcome predictions using neural networks
   - Player performance forecasting
   - Injury risk analysis
   - Custom ML model training with TensorFlow.js
 
-- **👥 Collaboration & Sharing**
-  - Public/private datasets
-  - Share custom models and insights
-  - Community-driven data collection
-  - Git-based version control integration
+- **💬 AI Chat Assistant** _(Premium & Pro)_
+  - Natural language queries ("Predict LeBron's points tonight")
+  - Conversational sports insights
+  - Historical data analysis
+  - Player comparisons
 
-- **🔒 Secure & Scalable**
-  - JWT-based authentication
-  - Role-based access control
-  - PostgreSQL database
-  - Containerized deployment with Docker
+- **⚡ Real-Time Updates** _(Premium & Pro)_
+  - Live game tracking
+  - Play-by-play data streams
+  - Push notifications
+  - WebSocket connections
+
+- **🏈 Fantasy & Betting Integrations** _(Pro Only)_
+  - DFS lineup optimizer
+  - Betting odds analysis
+  - Fantasy league API integrations
+  - Prop bet suggestions
+
+- **👥 Social Features**
+  - User-generated predictions
+  - Community leaderboards
+  - Discussion threads
+  - Follow analysts and experts
+
+- **🔌 Developer Features** _(Pro Only)_
+  - Full REST API access
+  - API keys for third-party apps
+  - White-label solutions
+  - Custom data feeds
+
+- **📱 Mobile App** (Coming Soon)
+  - React Native iOS & Android apps
+  - Push notifications
+  - Offline mode
+  - Voice commands
+
+### Security & Reliability
+- JWT-based authentication
+- Role-based access control
+- PostgreSQL database with backups
+- Docker containerized deployment
+- 99.9% uptime SLA (Pro tier)
 
 ## Tech Stack
 
