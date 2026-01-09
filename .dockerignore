@@ -1,0 +1,16 @@
+node_modules
+dist
+build
+.git
+.gitignore
+*.log
+.env
+.env.local
+*.md
+.vscode
+.idea
+coverage
+.DS_Store
+uploads
+models/*.h5
+models/*.pkl
