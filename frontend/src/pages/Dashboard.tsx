@@ -1,9 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
-import { dataAPI, analyticsAPI } from '../api/client';
+import { dataAPI } from '../api/client';
 import {
   Database,
   TrendingUp,
-  Users,
   Trophy,
   Activity,
   Brain,

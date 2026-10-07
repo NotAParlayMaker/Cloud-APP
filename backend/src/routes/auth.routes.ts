@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
+import jwt, { SignOptions } from 'jsonwebtoken';
 import { db } from '../config/database';
 import { AppError, asyncHandler } from '../middleware/errorHandler';
 import { authenticate, AuthRequest } from '../middleware/auth';
@@ -30,7 +30,7 @@ authRouter.post('/register', asyncHandler(async (req: Request, res: Response) =>
   const token = jwt.sign(
     { id: user.id, email: user.email, username: user.username },
     process.env.JWT_SECRET || 'secret',
-    { expiresIn: process.env.JWT_EXPIRES_IN || '7d' }
+    { expiresIn: (process.env.JWT_EXPIRES_IN || '7d') as SignOptions['expiresIn'] }
   );
 
   res.status(201).json({
@@ -72,7 +72,7 @@ authRouter.post('/login', asyncHandler(async (req: Request, res: Response) => {
   const token = jwt.sign(
     { id: user.id, email: user.email, username: user.username },
     process.env.JWT_SECRET || 'secret',
-    { expiresIn: process.env.JWT_EXPIRES_IN || '7d' }
+    { expiresIn: (process.env.JWT_EXPIRES_IN || '7d') as SignOptions['expiresIn'] }
   );
 
   res.json({
